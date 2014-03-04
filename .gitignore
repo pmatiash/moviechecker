@@ -1,0 +1,14 @@
+*.DS_Store
+*.empty
+.idea
+nbproject
+.buildpath
+.project
+.settings
+switch
+index
+/app/runtime
+/www/assets
+/app/lib/Yiinitializr/config/env.lock
+/app/config/env.php
+/app/config/local.php
