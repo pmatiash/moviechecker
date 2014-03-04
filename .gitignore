@@ -7,8 +7,8 @@ nbproject
 .settings
 switch
 index
-/app/runtime
-/www/assets
+/app/runtime/*
+/www/assets/*
 /app/lib/Yiinitializr/config/env.lock
 /app/config/env.php
 /app/config/local.php
