@@ -1,0 +1,402 @@
+/*
+	TXT 2.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	*
+	{
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	body
+	{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		background: #f2f5f3;
+		color: #6b7770;
+		font-size: 11.5pt;
+		line-height: 2em;
+	}
+	
+	h1, h2, h3, h4, h5, h6, h7
+	{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #6b7770;
+	}
+
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h7 a
+	{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	
+	h3.major
+	{
+		position: relative;
+		border-top: solid 5px #e7eae8;
+	}
+
+		h2.major span
+		{
+			background: #fff;
+			position: relative;
+			display: inline-block;
+		}
+
+		#footer h2.major span
+		{
+			background: #f2f5f3;
+		}
+	
+	a
+	{
+		color: #006376;
+		text-decoration: underline;
+	}
+
+		a:hover
+		{
+			text-decoration: none;
+		}
+
+	form
+	{
+	}
+	
+		/*form input,*/
+		form select,
+		form textarea
+		{
+			-webkit-appearance: none;
+		}
+			
+	br.clear
+	{
+		clear: both;
+	}
+	
+	p, ul, ol, dl, table
+	{
+		margin-bottom: 3em;
+	}
+	
+	section,
+	article
+	{
+		margin-bottom: 6em;
+	}
+	
+	section > :last-child,
+	article > :last-child
+	{
+		margin-bottom: 0;
+	}
+
+	section:last-child,
+	article:last-child
+	{
+		margin-bottom: 0;
+	}
+
+	.byline
+	{
+		display: block;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #c1cac5;
+	}
+
+	.image
+	{
+		position: relative;
+		display: inline-block;
+		border-radius: 8px;
+	}
+	
+		.image img
+		{
+			display: block;
+			width: 100%;
+			border-radius: 8px;
+		}
+		
+		/*
+			Note: The following style adds the textured/pixelated look to content
+			images. I added this to help mask the distortion introduced when a browser
+			resizes an image, but if you don't want this to happen just remove or comment
+			out the entire style.
+		*/
+		
+		.image:before
+		{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url('images/overlay.png');
+			opacity: 0.2;
+			border-radius: 8px;
+		}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		}
+		
+	.button
+	{
+		display: inline-block;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		background: #e3daa8;
+		color: #fff;
+		border-radius: 8px;
+		outline: 0;
+		-moz-transition: background-color .2s ease-in-out;
+		-webkit-transition: background-color .2s ease-in-out;
+		-o-transition: background-color .2s ease-in-out;
+		-ms-transition: background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;
+	}
+
+		.button:hover
+		{
+			background: #ebe3b2;
+		}
+	
+		.button-alt
+		{
+			background: #c1cac5;
+		}
+
+			.button-alt:hover
+			{
+				background: #ccd5d0;
+			}
+
+
+/*********************************************************************************/
+/* Sidebar + Content                                                             */
+/*********************************************************************************/
+
+	.sidebar
+	{
+	}
+	
+	.content
+	{
+	}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#banner-wrapper
+	{
+		position: relative;
+		background: url('../images/bg/bg_1.jpg') center center no-repeat;
+		background-size: cover;
+		z-index: 1;
+	}
+
+		/*
+			Note: The following style adds the textured/pixelated look to the banner
+			image. I added this to help mask the distortion introduced when a browser
+			resizes an image, but if you don't want this to happen just remove or comment
+			out the entire style.
+		*/
+
+	#main-wrapper
+	{
+		background: #fff;
+		border-top: solid 5px #e3daa8;
+		border-bottom: solid 5px #c1cac5;
+	}
+	
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+        padding: 10px 0 ;
+	}
+
+    #header .logo a {
+        text-decoration: none;
+        color: #6b7770;
+        font-size: 2em;
+    }
+
+    #header .logo span
+    {
+        border-bottom: solid 5px #e7eae8;
+        padding-bottom: 10px;
+
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
+
+
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+	}
+
+
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+.bolder {
+    font-weight: 700;
+}
+
+.alert {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#container
+{
+    padding: 20px;
+}
+
+#container span {
+    margin: 10px 0;
+    display: block;
+}
+
+#container span.bolder {
+    line-height: 15px;
+}
+
+#container #mlist {
+    margin-top: 20px;
+}
+#container #mlist .mItem {
+    width: 330px;
+    height: 350px;
+    float: left;
+    padding: 20px 20px 10px 20px;
+    margin-right: 46px;
+}
+#container #mlist .mItem:hover {
+    background-color: #e7eae8;
+}
+
+
+#container #mlist .mItem span {
+    display: block;
+    width: 100%;
+}
+
+#main #loginForm {
+    width: 350px;
+    margin: 0 auto;
+}
+
+#main #loginForm input[type="text"], #main #loginForm input[type="password"] {
+    height: 40px;
+    width: 350px;
+    font-size: 1.3em;
+}
+
+#main #loginForm input[type="submit"] {
+    float: right;
+    font-size: 1.1em;
+    width: 100px;
+    height: 35px;
+}
+
+#main #loginForm input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    float: left;
+    display: block;
+    margin-right: 5px;
+}
+
+#main #loginForm label {
+    float: left;
+}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+	}
+	
+		#footer a
+		{
+			color: inherit;
+		}
+
+#footer a:hover{
+    text-decoration: underline;
+}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		display: inline-block;
+		background: #e7eae8;
+		padding: 0.75em 2em 0.75em 2em;
+		border-radius: 8px;
+		font-size: 0.85em;
+		color: #8b9790;
+	}
+	
+		#copyright a
+		{
+			color: inherit;
+		}

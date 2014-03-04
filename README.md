@@ -4,6 +4,7 @@ For more information about Yiinitializr please check it at [its github repo](htt
 
 ## Original Structure
 
+```
    |-app
    |---cli
    |-----commands
@@ -34,4 +35,5 @@ For more information about Yiinitializr please check it at [its github repo](htt
    |---img
    |---js
    |-----libs
+```
 
