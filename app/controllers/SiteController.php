@@ -57,7 +57,7 @@ class SiteController extends EController
                     endif;
                 else:
                     Yii::app()->user->setFlash(TbHtml::ALERT_COLOR_INFO, 'User already exist. Please login.');
-                    $this->redirect(Yii::app()->baseUrl);
+                    $this->redirect(Yii::app()->getBaseUrl(true));
                 endif;
             endif;
 
@@ -65,7 +65,7 @@ class SiteController extends EController
 
             if($identity->authenticate()) {
                 Yii::app()->user->login($identity, 3600);
-                if ( Yii::app()->user->returnUrl != Yii::app()->baseUrl."/" )
+                if ( Yii::app()->user->returnUrl != Yii::app()->getBaseUrl(true)."/" )
                     $this->redirect(Yii::app()->user->returnUrl);
                 else
                     $this->redirect(Yii::app()->createAbsoluteUrl('/list'));
@@ -91,6 +91,6 @@ class SiteController extends EController
     public function actionLogout() {
         Yii::app()->user->logout();
         Yii::app()->user->setFlash('notice', 'Вы вышли из учетной записи');
-        $this->redirect(Yii::app()->baseUrl);
+        $this->redirect(Yii::app()->getBaseUrl(true));
     }
 }
