@@ -67,7 +67,8 @@ class User extends ParentModel {
      * @return mixed
      */
     public function getToken( $isLogin = false, $username = null, $password = null ) {
-        return ApiConnector::getToken($this->id, $isLogin, $username, $password);
+        $connector = new ApiConnector();
+        return $connector->getToken($this->id, $isLogin, $username, $password);
     }
 
 }

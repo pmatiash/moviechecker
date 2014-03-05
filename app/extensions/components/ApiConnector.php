@@ -23,7 +23,7 @@ class ApiConnector
      * @param null $password
      * @return mixed
      */
-    public static function getToken($userId, $isLogin = false, $userName = null, $password = null)
+    public function getToken($userId, $isLogin = false, $userName = null, $password = null)
     {
         if ( !Yii::app()->cache->get('auth_token_'.$userId) ):
 
@@ -49,7 +49,7 @@ class ApiConnector
         return Yii::app()->cache->get('auth_token_'.$userId);
     }
 
-    public static function getMovieList() {
+    public function getMovieList() {
 
         $url = Yii::app()->params['api.server']."/media/list";
         $token = self::getToken(Yii::app()->user->id);

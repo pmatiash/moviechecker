@@ -83,7 +83,7 @@ class SiteController extends EController
                         break;
                 }
 
-                $this->redirect(Yii::app()->baseUrl);
+                $this->redirect(Yii::app()->getBaseUrl(true));
             }
         endif;
     }

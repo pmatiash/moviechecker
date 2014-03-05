@@ -48,7 +48,7 @@ return ArrayX::merge(array(
 
 		'clientScript' => array(
 			'scriptMap' => array(
-				'bootstrap.min.css' => "bootstrap.assets.css.bootstrap.min.css",
+				'bootstrap.min.css' => 'bootstrap.assets.css.bootstrap.min.css',
 				'bootstrap.min.js' => false,
 				'bootstrap-yii.css' => false
 			)
