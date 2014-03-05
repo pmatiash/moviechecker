@@ -10,5 +10,6 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 require('./../app/lib/vendor/autoload.php');
+set_include_path('./../app/lib/vendor');
 
 Yiinitializr\Helpers\Initializer::create('./../app', 'main', array('common', 'env', 'local'))->run();
