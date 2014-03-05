@@ -30,14 +30,8 @@ $this->widget('bootstrap.widgets.TbAlert', array(
     'block'=>true
 ));
 
-/*foreach(Yii::app()->user->getFlashes() as $key => $message) {
-    if ($key == 'error' || $key == 'success' || $key == 'notice'){
-        echo "<div class='flash-{$key}'>{$message}</div>";
-    }
-}
-*/
-
 echo '<div id="container" class="container">'.$content.'</div>';
+
 $this->beginContent('//layouts/footer');
 $this->endContent();
 ?>
