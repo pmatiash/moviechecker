@@ -2,7 +2,12 @@
 
 ## Description
 
-* 2 models: Users & Movie.
+* Project based on Yii Framework.
+* Database: MySQL.
+* Using Zend components (e.g. ZendHttpClient).
+* Front-end: bootstrap (yiistrap + yiiwheels), JQuery.
+===
+* 2 models: User & Movie.
 * Login & really simple registration. Only allowed users will be login. I don't save password as is, only hash (with sold).
 * Access rules. Deny all inside pages for non authorized.
 * Movie list update with Ajax. Checking for new movies.
