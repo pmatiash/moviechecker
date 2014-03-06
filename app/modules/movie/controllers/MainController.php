@@ -43,7 +43,8 @@ class MainController extends EController
     public function actionCheckout() {
         $connector = new ApiConnector();
         $this->saveData($connector->getMovieList());
-        Yii::app()->user->setFlash('notice', 'Movie list has been updated.');
+        echo Yii::app()->user->setFlash('success', 'Movie list has been updated.');
+
         # @TODO: if will be more records need to limitation load (e.g. by 100 at once)
         $this->renderPartial( '/_list', array('movies' => $this->getMoviesArray()) );
     }

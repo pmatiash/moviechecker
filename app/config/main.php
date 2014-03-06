@@ -74,7 +74,7 @@ return ArrayX::merge(array(
 		),
 		'user' => array(
 			'allowAutoLogin' => true,
-            'loginUrl'=>array('/'),
+            'loginUrl'=>array(),
 		),
 		'errorHandler' => array(
 			'errorAction' => 'site/error',
