@@ -1,6 +1,21 @@
-Based on YIInitializr-basic
+Test app MovieChecker based on YIInitializr-basic
 =======
-For more information about Yiinitializr please check it at [its github repo](https://github.com/2amigos/yiinitializr).
+## Description
+
+* 2 models: Users & Movie.
+* Login & really simple registration. Only allowed users will be login. I don't save password as is, only hash (with sold).
+* Access rules. Deny all inside pages for non authorized.
+* Movie list update with Ajax. Checking for new movies.
+* URL routing (e.g. alias "/list" instead "module/controller/action").
+* Video was embedded through simple html tags <object> instead html5 tag <video>
+
+
+## Deployment
+=======
+
+* pull repo
+* make access rules for assets & runtime folders
+* run initial migrate
 
 ## Original Structure
 
@@ -37,3 +52,4 @@ For more information about Yiinitializr please check it at [its github repo](htt
    |-----libs
 ```
 
+For more information about Yiinitializr please check it at [its github repo](https://github.com/2amigos/yiinitializr).
