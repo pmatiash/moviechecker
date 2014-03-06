@@ -1,5 +1,5 @@
-Test app MovieChecker based on YIInitializr-basic
-=======
+Test app MovieChecker based on YIInitializr
+
 ## Description
 
 * 2 models: Users & Movie.
@@ -11,7 +11,6 @@ Test app MovieChecker based on YIInitializr-basic
 
 
 ## Deployment
-=======
 
 * pull repo
 * make access rules for assets & runtime folders
