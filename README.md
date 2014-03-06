@@ -1,4 +1,4 @@
-Test app MovieChecker based on YIInitializr
+# Test app MovieChecker based on YIInitializr
 
 ## Description
 
